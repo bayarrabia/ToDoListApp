@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePageFragment">
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.rabiabayar.hw3.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_firstPageFragment"
+            app:destination="@id/firstPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstPageFragment"
+        android:name="com.rabiabayar.hw3.FirstPageFragment"
+        android:label="fragment_first_page"
+        tools:layout="@layout/fragment_first_page" />
+</navigation>
